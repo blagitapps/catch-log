@@ -12,6 +12,7 @@ TYPE    Zilla Slab for weights and titles, Caveat for handwritten notes, Barlow 
   --sa-t:env(safe-area-inset-top,0px);--sa-b:env(safe-area-inset-bottom,0px);
   --slab:"Zilla Slab","Rockwell","Georgia",serif;--hand:"Caveat","Segoe Print","Bradley Hand",cursive;
 }
+[hidden]{display:none!important}
 *{box-sizing:border-box;min-width:0}
 html{-webkit-text-size-adjust:100%;background:var(--wood)}
 body{margin:0;color:var(--ink);font:16px/1.5 Barlow,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;overflow-x:clip;padding-bottom:calc(88px + var(--sa-b));

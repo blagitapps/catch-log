@@ -3,7 +3,7 @@
    so catches can always be moved to a new phone or a future app. */
 'use strict';
 {
-const APP_VERSION = '1.3.0';
+const APP_VERSION = '1.3.1';
 const DATA_VERSION = 1;
 const TILE_URL = 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/';
 const LABEL_URL = 'https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/';

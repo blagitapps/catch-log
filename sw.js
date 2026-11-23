@@ -1,5 +1,5 @@
 // Catch Log service worker: works offline, keeps map tiles you've looked at.
-const VERSION = 'v1.3.0';
+const VERSION = 'v1.3.1';
 const SHELL = 'shell-' + VERSION;
 const TILES = 'tiles-v1';
 const MAX_TILES = 3000;
