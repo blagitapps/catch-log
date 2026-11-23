@@ -3,7 +3,7 @@
    so catches can always be moved to a new phone or a future app. */
 'use strict';
 {
-const APP_VERSION = '1.3.1';
+const APP_VERSION = '1.3.2';
 const DATA_VERSION = 1;
 const TILE_URL = 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/';
 const LABEL_URL = 'https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/';
@@ -448,7 +448,7 @@ ${pines(22, 168, 34, '#9a8058', 'a')}${pines(16, 172, 46, '#5b4a32', 'b')}
 </svg>`;
 
 function introHTML() {
-  const school = [['Pike', 16, 5.2, .1, false, 1.25], ['Mirror carp', 42, 4.6, .45, true, 1.1], ['Perch', 64, 3.8, .2, false, .75], ['Brown trout', 28, 4.8, .9, true, .85], ['Roach', 76, 3.6, .6, true, .6], ['Tench', 54, 4.4, 1.3, false, .7]];
+  const school = [['Pike', 16, 10.4, .2, false, 1.25], ['Mirror carp', 42, 9.2, .9, true, 1.1], ['Perch', 64, 7.6, .4, false, .75], ['Brown trout', 28, 9.6, 1.8, true, .85], ['Roach', 76, 7.2, 1.2, true, .6], ['Tench', 54, 8.8, 2.6, false, .7]];
   return `<div class="intro" id="intro" role="presentation">
     <div class="rays"></div>
     ${[...Array(12)].map((_, i) => `<i class="bub" style="left:${(i * 37) % 100}%;animation-delay:${(i % 5) * .5}s;--s:${4 + (i % 4) * 3}px"></i>`).join('')}
@@ -466,7 +466,7 @@ function playIntro() {
   const el = $('#intro');
   const done = () => { if (!el.isConnected) return; el.classList.add('out'); setTimeout(() => el.remove(), 600); };
   el.addEventListener('click', done);
-  setTimeout(done, 3600);
+  setTimeout(done, 7200);
 }
 
 const ICON = {
